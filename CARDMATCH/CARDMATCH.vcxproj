@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1162d40d-83a3-4795-ab76-393c02b15baf}</ProjectGuid>
+    <RootNamespace>CARDMATCH</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(ProjectDir)SDL2\lib\x86;$(ProjectDir)glew\lib\x86;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerAttach>false</LocalDebuggerAttach>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(ProjectDir)SDL2\lib\x64;$(ProjectDir)glew\lib\x64;</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerAttach>false</LocalDebuggerAttach>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)glew/include;$(ProjectDir)SDL2/include;$(ProjectDir)rapidjson/include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(ProjectDir)glew/lib/x86;$(ProjectDir)SDL2/lib/x86;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)glew/include;$(ProjectDir)SDL2/include;$(ProjectDir)rapidjson/include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>$(ProjectDir)glew/lib/x64;$(ProjectDir)SDL2/lib/x64;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)SDL2/include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_image.lib;sdl2_mixer.lib;sdl2_ttf.lib;sdl2_net.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)SDL2/lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;sdl2_image.lib;sdl2_mixer.lib;sdl2_ttf.lib;sdl2_net.lib;opengl32.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimationComponent.h" />
+    <ClInclude Include="AnimationManager.h" />
+    <ClInclude Include="BaseShaderGL.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="Client.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionDetectionManager.h" />
+    <ClInclude Include="ConfigurationManager.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="ControllerEvent.h" />
+    <ClInclude Include="ControllerEventListener.h" />
+    <ClInclude Include="ControllerInputHandler.h" />
+    <ClInclude Include="Deck.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="EventListener.h" />
+    <ClInclude Include="FixedStepGameLoop.h" />
+    <ClInclude Include="FrameGameLoop.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameEvent.h" />
+    <ClInclude Include="GameLoop.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectContext.h" />
+    <ClInclude Include="GameObjectFactory.h" />
+    <ClInclude Include="GameObjectProperties.h" />
+    <ClInclude Include="GameObjectSettings.h" />
+    <ClInclude Include="GameObjectState.h" />
+    <ClInclude Include="GameObjectVisitor.h" />
+    <ClInclude Include="GameSettings.h" />
+    <ClInclude Include="glew\include\GL\eglew.h" />
+    <ClInclude Include="glew\include\GL\glew.h" />
+    <ClInclude Include="glew\include\GL\glxew.h" />
+    <ClInclude Include="glew\include\GL\wglew.h" />
+    <ClInclude Include="GraphicsComponent.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="ImageGL.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="JSONContext.h" />
+    <ClInclude Include="JSONExpression.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="KeyboardEvent.h" />
+    <ClInclude Include="KeyboardEventListener.h" />
+    <ClInclude Include="KeyboardInputHandler.h" />
+    <ClInclude Include="MouseEvent.h" />
+    <ClInclude Include="MouseEventListener.h" />
+    <ClInclude Include="MouseInputHandler.h" />
+    <ClInclude Include="MusicComponent.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="NetworkManager.h" />
+    <ClInclude Include="NetworkMediator.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="OpenGLImage.h" />
+    <ClInclude Include="PhysicsComponent.h" />
+    <ClInclude Include="PlayScene.h" />
+    <ClInclude Include="ProxyClient.h" />
+    <ClInclude Include="QuadGL.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\allocators.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\document.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\encodedstream.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\encodings.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\error\en.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\error\error.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\filereadstream.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\filewritestream.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\fwd.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\clzll.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\itoa.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\meta.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\pow10.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\regex.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\stack.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\strtod.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\internal\swap.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\memorybuffer.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\memorystream.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\pointer.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\prettywriter.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\rapidjson.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\reader.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\schema.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\stream.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\stringbuffer.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\uri.h" />
+    <ClInclude Include="rapidjson\include\rapidjson\writer.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererFactory.h" />
+    <ClInclude Include="DirectXRenderer.h" />
+    <ClInclude Include="OpenGLRenderer.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneExpression.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SceneSettings.h" />
+    <ClInclude Include="SDL2\include\begin_code.h" />
+    <ClInclude Include="SDL2\include\close_code.h" />
+    <ClInclude Include="SDL2\include\SDL.h" />
+    <ClInclude Include="SDL2\include\SDL_assert.h" />
+    <ClInclude Include="SDL2\include\SDL_atomic.h" />
+    <ClInclude Include="SDL2\include\SDL_audio.h" />
+    <ClInclude Include="SDL2\include\SDL_bits.h" />
+    <ClInclude Include="SDL2\include\SDL_blendmode.h" />
+    <ClInclude Include="SDL2\include\SDL_clipboard.h" />
+    <ClInclude Include="SDL2\include\SDL_config.h" />
+    <ClInclude Include="SDL2\include\SDL_cpuinfo.h" />
+    <ClInclude Include="SDL2\include\SDL_egl.h" />
+    <ClInclude Include="SDL2\include\SDL_endian.h" />
+    <ClInclude Include="SDL2\include\SDL_error.h" />
+    <ClInclude Include="SDL2\include\SDL_events.h" />
+    <ClInclude Include="SDL2\include\SDL_filesystem.h" />
+    <ClInclude Include="SDL2\include\SDL_gamecontroller.h" />
+    <ClInclude Include="SDL2\include\SDL_gesture.h" />
+    <ClInclude Include="SDL2\include\SDL_guid.h" />
+    <ClInclude Include="SDL2\include\SDL_haptic.h" />
+    <ClInclude Include="SDL2\include\SDL_hidapi.h" />
+    <ClInclude Include="SDL2\include\SDL_hints.h" />
+    <ClInclude Include="SDL2\include\SDL_image.h" />
+    <ClInclude Include="SDL2\include\SDL_joystick.h" />
+    <ClInclude Include="SDL2\include\SDL_keyboard.h" />
+    <ClInclude Include="SDL2\include\SDL_keycode.h" />
+    <ClInclude Include="SDL2\include\SDL_loadso.h" />
+    <ClInclude Include="SDL2\include\SDL_locale.h" />
+    <ClInclude Include="SDL2\include\SDL_log.h" />
+    <ClInclude Include="SDL2\include\SDL_main.h" />
+    <ClInclude Include="SDL2\include\SDL_messagebox.h" />
+    <ClInclude Include="SDL2\include\SDL_metal.h" />
+    <ClInclude Include="SDL2\include\SDL_misc.h" />
+    <ClInclude Include="SDL2\include\SDL_mixer.h" />
+    <ClInclude Include="SDL2\include\SDL_mouse.h" />
+    <ClInclude Include="SDL2\include\SDL_mutex.h" />
+    <ClInclude Include="SDL2\include\SDL_name.h" />
+    <ClInclude Include="SDL2\include\SDL_net.h" />
+    <ClInclude Include="SDL2\include\SDL_opengl.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2ext.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2platform.h" />
+    <ClInclude Include="SDL2\include\SDL_opengles2_khrplatform.h" />
+    <ClInclude Include="SDL2\include\SDL_opengl_glext.h" />
+    <ClInclude Include="SDL2\include\SDL_pixels.h" />
+    <ClInclude Include="SDL2\include\SDL_platform.h" />
+    <ClInclude Include="SDL2\include\SDL_power.h" />
+    <ClInclude Include="SDL2\include\SDL_quit.h" />
+    <ClInclude Include="SDL2\include\SDL_rect.h" />
+    <ClInclude Include="SDL2\include\SDL_render.h" />
+    <ClInclude Include="SDL2\include\SDL_revision.h" />
+    <ClInclude Include="SDL2\include\SDL_rwops.h" />
+    <ClInclude Include="SDL2\include\SDL_scancode.h" />
+    <ClInclude Include="SDL2\include\SDL_sensor.h" />
+    <ClInclude Include="SDL2\include\SDL_shape.h" />
+    <ClInclude Include="SDL2\include\SDL_stdinc.h" />
+    <ClInclude Include="SDL2\include\SDL_surface.h" />
+    <ClInclude Include="SDL2\include\SDL_system.h" />
+    <ClInclude Include="SDL2\include\SDL_syswm.h" />
+    <ClInclude Include="SDL2\include\SDL_test.h" />
+    <ClInclude Include="SDL2\include\SDL_test_assert.h" />
+    <ClInclude Include="SDL2\include\SDL_test_common.h" />
+    <ClInclude Include="SDL2\include\SDL_test_compare.h" />
+    <ClInclude Include="SDL2\include\SDL_test_crc32.h" />
+    <ClInclude Include="SDL2\include\SDL_test_font.h" />
+    <ClInclude Include="SDL2\include\SDL_test_fuzzer.h" />
+    <ClInclude Include="SDL2\include\SDL_test_harness.h" />
+    <ClInclude Include="SDL2\include\SDL_test_images.h" />
+    <ClInclude Include="SDL2\include\SDL_test_log.h" />
+    <ClInclude Include="SDL2\include\SDL_test_md5.h" />
+    <ClInclude Include="SDL2\include\SDL_test_memory.h" />
+    <ClInclude Include="SDL2\include\SDL_test_random.h" />
+    <ClInclude Include="SDL2\include\SDL_thread.h" />
+    <ClInclude Include="SDL2\include\SDL_timer.h" />
+    <ClInclude Include="SDL2\include\SDL_touch.h" />
+    <ClInclude Include="SDL2\include\SDL_ttf.h" />
+    <ClInclude Include="SDL2\include\SDL_types.h" />
+    <ClInclude Include="SDL2\include\SDL_version.h" />
+    <ClInclude Include="SDL2\include\SDL_video.h" />
+    <ClInclude Include="SDL2\include\SDL_vulkan.h" />
+    <ClInclude Include="SDLOpenGLCoordinate.h" />
+    <ClInclude Include="Selector.h" />
+    <ClInclude Include="Server.h" />
+    <ClInclude Include="SettingsExpression.h" />
+    <ClInclude Include="SFX.h" />
+    <ClInclude Include="SFXComponent.h" />
+    <ClInclude Include="ShaderGL.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="TextComponent.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="VariableStepGameLoop.h" />
+    <ClInclude Include="Vector2D.h" />
+    <ClInclude Include="VertexGL.h" />
+    <ClInclude Include="Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimationComponent.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
+    <ClCompile Include="BaseShaderGL.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="CollisionDetectionManager.cpp" />
+    <ClCompile Include="ConfigurationManager.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="ControllerEvent.cpp" />
+    <ClCompile Include="ControllerEventListener.cpp" />
+    <ClCompile Include="ControllerInputHandler.cpp" />
+    <ClCompile Include="Deck.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FixedStepGameLoop.cpp" />
+    <ClCompile Include="FrameGameLoop.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameLoop.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectContext.cpp" />
+    <ClCompile Include="GameObjectFactory.cpp" />
+    <ClCompile Include="GameObjectProperties.cpp" />
+    <ClCompile Include="GameObjectSettings.cpp" />
+    <ClCompile Include="GameObjectState.cpp" />
+    <ClCompile Include="GameSettings.cpp" />
+    <ClCompile Include="GraphicsComponent.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageGL.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="KeyboardEvent.cpp" />
+    <ClCompile Include="KeyboardEventListener.cpp" />
+    <ClCompile Include="KeyboardInputHandler.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Mouse.cpp" />
+    <ClCompile Include="MouseEvent.cpp" />
+    <ClCompile Include="MouseEventListener.cpp" />
+    <ClCompile Include="MouseInputHandler.cpp" />
+    <ClCompile Include="MusicComponent.cpp" />
+    <ClCompile Include="NetworkManager.cpp" />
+    <ClCompile Include="OpenGLImage.cpp" />
+    <ClCompile Include="PhysicsComponent.cpp" />
+    <ClCompile Include="PlayScene.cpp" />
+    <ClCompile Include="ProxyClient.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RendererFactory.cpp" />
+    <ClCompile Include="DirectXRenderer.cpp" />
+    <ClCompile Include="OpenGLRenderer.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneExpression.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SceneSettings.cpp" />
+    <ClCompile Include="SDLOpenGLCoordinate.cpp" />
+    <ClCompile Include="Selector.cpp" />
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="SettingsExpression.cpp" />
+    <ClCompile Include="SFX.cpp" />
+    <ClCompile Include="SFXComponent.cpp" />
+    <ClCompile Include="ShaderGL.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="TextComponent.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="VariableStepGameLoop.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+    <ClCompile Include="Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SDL_GameControllerDB.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config\config.json" />
+    <None Include="glew\lib\x64\glew32.dll" />
+    <None Include="glew\lib\x86\glew32.dll" />
+    <None Include="SDL2\lib\x64\libavif-16.dll" />
+    <None Include="SDL2\lib\x64\libmodplug-1.dll" />
+    <None Include="SDL2\lib\x64\libogg-0.dll" />
+    <None Include="SDL2\lib\x64\libopus-0.dll" />
+    <None Include="SDL2\lib\x64\libopusfile-0.dll" />
+    <None Include="SDL2\lib\x64\libtiff-5.dll" />
+    <None Include="SDL2\lib\x64\libwebp-7.dll" />
+    <None Include="SDL2\lib\x64\libwebpdemux-2.dll" />
+    <None Include="SDL2\lib\x64\SDL2.dll" />
+    <None Include="SDL2\lib\x64\SDL2_image.dll" />
+    <None Include="SDL2\lib\x64\SDL2_mixer.dll" />
+    <None Include="SDL2\lib\x64\SDL2_net.dll" />
+    <None Include="SDL2\lib\x64\SDL2_ttf.dll" />
+    <None Include="SDL2\lib\x86\libavif-16.dll" />
+    <None Include="SDL2\lib\x86\libmodplug-1.dll" />
+    <None Include="SDL2\lib\x86\libogg-0.dll" />
+    <None Include="SDL2\lib\x86\libopus-0.dll" />
+    <None Include="SDL2\lib\x86\libopusfile-0.dll" />
+    <None Include="SDL2\lib\x86\libtiff-5.dll" />
+    <None Include="SDL2\lib\x86\libwebp-7.dll" />
+    <None Include="SDL2\lib\x86\libwebpdemux-2.dll" />
+    <None Include="SDL2\lib\x86\SDL2.dll" />
+    <None Include="SDL2\lib\x86\SDL2_image.dll" />
+    <None Include="SDL2\lib\x86\SDL2_mixer.dll" />
+    <None Include="SDL2\lib\x86\SDL2_net.dll" />
+    <None Include="SDL2\lib\x86\SDL2_ttf.dll" />
+    <None Include="SDL2\lib\x64\SDL2.lib" />
+    <None Include="SDL2\lib\x64\SDL2main.lib" />
+    <None Include="SDL2\lib\x64\SDL2test.lib" />
+    <None Include="SDL2\lib\x64\SDL2_image.lib" />
+    <None Include="SDL2\lib\x64\SDL2_mixer.lib" />
+    <None Include="SDL2\lib\x64\SDL2_net.lib" />
+    <None Include="SDL2\lib\x64\SDL2_ttf.lib" />
+    <None Include="SDL2\lib\x86\SDL2.lib" />
+    <None Include="SDL2\lib\x86\SDL2main.lib" />
+    <None Include="SDL2\lib\x86\SDL2test.lib" />
+    <None Include="SDL2\lib\x86\SDL2_image.lib" />
+    <None Include="SDL2\lib\x86\SDL2_mixer.lib" />
+    <None Include="SDL2\lib\x86\SDL2_net.lib" />
+    <None Include="SDL2\lib\x86\SDL2_ttf.lib" />
+    <None Include="glew\lib\x64\glew32.lib" />
+    <None Include="glew\lib\x64\glew32s.lib" />
+    <None Include="glew\lib\x86\glew32.lib" />
+    <None Include="glew\lib\x86\glew32s.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

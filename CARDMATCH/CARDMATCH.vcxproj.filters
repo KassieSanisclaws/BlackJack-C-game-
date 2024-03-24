@@ -1,0 +1,1066 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="GAMEENGINE">
+      <UniqueIdentifier>{67ec1e40-7613-49dd-b9f7-05d55916b3d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\COMPONENTS">
+      <UniqueIdentifier>{6d16b529-69d9-4083-ac9f-7ffe7816c8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\MANAGERS">
+      <UniqueIdentifier>{571130bc-e867-4b9c-8dd4-dcd2bb9607e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEOBJECTS">
+      <UniqueIdentifier>{ef61a010-4553-43c1-9fa0-8b0c3e210ee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SCENES">
+      <UniqueIdentifier>{2c1af75c-93a1-4114-8ef7-84e695569808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MAIN">
+      <UniqueIdentifier>{63938b1f-e15b-45a6-b4bf-656f8079c5a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UTILITIES">
+      <UniqueIdentifier>{8ee11110-10db-4270-9eb7-54cfa63cc69f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL">
+      <UniqueIdentifier>{c57647df-2fd0-46fa-8ac0-e9b47f2bedcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL\INCLUDE">
+      <UniqueIdentifier>{f77e3762-7ce8-4772-b140-f9a9afeeced7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL\LIB">
+      <UniqueIdentifier>{fed06399-f60c-4ad6-83e2-69ed8f5d4d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL\LIB\X86">
+      <UniqueIdentifier>{eed65ab7-bf69-4755-9520-ee04d69de1c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\RENDERERS">
+      <UniqueIdentifier>{7574d88a-c317-4263-a90c-f698c0c5045a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\CORE">
+      <UniqueIdentifier>{e0ad23bd-2bb1-4ded-baf4-ea6fb10c4794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\INPUT">
+      <UniqueIdentifier>{20c123ec-ea05-491d-a162-40af4c37019d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\NETWORKING">
+      <UniqueIdentifier>{fceca9c6-08d2-4c9a-b3a7-bece74a306ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\PARSER">
+      <UniqueIdentifier>{bb391248-117f-4b77-b194-8eb42b5314ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CONFIG">
+      <UniqueIdentifier>{50f801a2-7a99-47b4-95be-2a0555ff3443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAPIDJSON">
+      <UniqueIdentifier>{564fca55-eb4f-4c8d-acc3-347e76606562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAPIDJSON\INCLUDE">
+      <UniqueIdentifier>{77bd9864-74e9-444b-889f-c8bc0838cc4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAPIDJSON\INCLUDE\RAPIDJSON">
+      <UniqueIdentifier>{03c67291-edc4-45c7-86ec-918e3ab78041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAPIDJSON\INCLUDE\RAPIDJSON\MISINTTYPES">
+      <UniqueIdentifier>{9c307b25-9d6f-48e6-b85c-b64e4b8a0bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAPIDJSON\INCLUDE\RAPIDJSON\ERROR">
+      <UniqueIdentifier>{d9ab3734-c98a-4209-85de-fe7a24f6f59f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL">
+      <UniqueIdentifier>{7e5cb0b1-1236-49e1-8fe7-634fe1a94002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GAMEENGINE\OPENGL">
+      <UniqueIdentifier>{61f21da2-8c87-4a34-9dd1-38754a8cbfdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEW">
+      <UniqueIdentifier>{99753358-879b-4311-a649-38d600e481f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEW\INCLUDE">
+      <UniqueIdentifier>{fcd48e06-958a-4a2a-b8f0-edbfdcf5ff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEW\LIB">
+      <UniqueIdentifier>{0b9710be-a9f9-4d95-aaed-13b809bd3a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEW\LIB\X64">
+      <UniqueIdentifier>{785e95d7-6da8-4f06-bfdd-c12470c2b6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEW\LIB\X86">
+      <UniqueIdentifier>{7a9323b3-27f3-4ea9-b4ec-60ee92d685db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDL\LIB\X64">
+      <UniqueIdentifier>{366466ee-4857-4ea1-bc6e-83147ca7c16d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLEW\INCLUDE\GL">
+      <UniqueIdentifier>{1131e15c-c8d4-4fff-ba1a-708a9c4256ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RendererFactory.h">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXRenderer.h">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLRenderer.h">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationComponent.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectProperties.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsComponent.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicComponent.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsComponent.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="SFX.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXComponent.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Text.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="TextComponent.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>UTILITIES</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayScene.h">
+      <Filter>SCENES</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_clipboard.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_config.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_cpuinfo.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_egl.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_endian.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_error.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_events.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_filesystem.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_gamecontroller.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_gesture.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_guid.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_haptic.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_hidapi.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_hints.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_image.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_joystick.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_keyboard.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_keycode.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_loadso.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_locale.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_log.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_main.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_messagebox.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_metal.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_misc.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_mixer.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_mouse.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_mutex.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_name.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_net.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengl.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengl_glext.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengles.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengles2.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2ext.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengles2_gl2platform.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_opengles2_khrplatform.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_pixels.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_platform.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_power.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_quit.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_rect.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_render.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_revision.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_rwops.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_scancode.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_sensor.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_shape.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_stdinc.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_surface.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_system.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_syswm.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_assert.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_common.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_compare.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_crc32.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_font.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_fuzzer.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_harness.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_images.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_log.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_md5.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_memory.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_test_random.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_thread.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_timer.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_touch.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_ttf.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_types.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_version.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_video.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_vulkan.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\begin_code.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\close_code.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_assert.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_atomic.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_audio.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_bits.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL2\include\SDL_blendmode.h">
+      <Filter>SDL\INCLUDE</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\allocators.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\cursorstreamwrapper.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\document.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\encodedstream.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\encodings.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\filereadstream.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\filewritestream.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\fwd.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\istreamwrapper.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\memorybuffer.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\memorystream.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\ostreamwrapper.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\pointer.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\prettywriter.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\rapidjson.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\reader.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\schema.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\stream.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\stringbuffer.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\uri.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\writer.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\msinttypes\inttypes.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\MISINTTYPES</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\msinttypes\stdint.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\MISINTTYPES</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\error\en.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\ERROR</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\error\error.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\ERROR</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\biginteger.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\clzll.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\diyfp.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\dtoa.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\ieee754.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\itoa.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\meta.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\pow10.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\regex.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\stack.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\strfunc.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\strtod.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\include\rapidjson\internal\swap.h">
+      <Filter>RAPIDJSON\INCLUDE\RAPIDJSON\INTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetectionManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationManager.h">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerEvent.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerInputHandler.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedStepGameLoop.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameGameLoop.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLoop.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectContext.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectSettings.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectState.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectVisitor.h">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSettings.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="JSONContext.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="JSONExpression.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="Key.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEvent.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardInputHandler.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEvent.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseInputHandler.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkManager.h">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkMediator.h">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneExpression.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSettings.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingsExpression.h">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClInclude>
+    <ClInclude Include="VariableStepGameLoop.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEvent.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectFactory.h">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseShaderGL.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageGL.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLImage.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadGL.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexGL.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderGL.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="SDLOpenGLCoordinate.h">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClInclude>
+    <ClInclude Include="ControllerEventListener.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="EventListener.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardEventListener.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEventListener.h">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClInclude>
+    <ClInclude Include="ProxyClient.h">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\eglew.h">
+      <Filter>GLEW\INCLUDE\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\glew.h">
+      <Filter>GLEW\INCLUDE\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\glxew.h">
+      <Filter>GLEW\INCLUDE\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="glew\include\GL\wglew.h">
+      <Filter>GLEW\INCLUDE\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>GAMEOBJECTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Deck.h">
+      <Filter>GAMEOBJECTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>GAMEOBJECTS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RendererFactory.cpp">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXRenderer.cpp">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLRenderer.cpp">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationComponent.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectProperties.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsComponent.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="MusicComponent.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsComponent.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="SFX.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXComponent.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="Text.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="TextComponent.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2D.cpp">
+      <Filter>UTILITIES</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>UTILITIES</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>UTILITIES</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayScene.cpp">
+      <Filter>SCENES</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>MAIN</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>GAMEENGINE\RENDERERS</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetectionManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationManager.cpp">
+      <Filter>GAMEENGINE\MANAGERS</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerEvent.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerInputHandler.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="FixedStepGameLoop.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameGameLoop.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLoop.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectContext.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectSettings.cpp">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectState.cpp">
+      <Filter>GAMEENGINE\COMPONENTS</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSettings.cpp">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Key.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardEvent.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardInputHandler.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEvent.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseInputHandler.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkManager.cpp">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneExpression.cpp">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSettings.cpp">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingsExpression.cpp">
+      <Filter>GAMEENGINE\PARSER</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableStepGameLoop.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectFactory.cpp">
+      <Filter>GAMEENGINE\CORE</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseShaderGL.cpp">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageGL.cpp">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLImage.cpp">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderGL.cpp">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLOpenGLCoordinate.cpp">
+      <Filter>GAMEENGINE\OPENGL</Filter>
+    </ClCompile>
+    <ClCompile Include="ControllerEventListener.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardEventListener.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEventListener.cpp">
+      <Filter>GAMEENGINE\INPUT</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClCompile>
+    <ClCompile Include="ProxyClient.cpp">
+      <Filter>GAMEENGINE\NETWORKING</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>GAMEOBJECTS</Filter>
+    </ClCompile>
+    <ClCompile Include="Deck.cpp">
+      <Filter>GAMEOBJECTS</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector.cpp">
+      <Filter>GAMEOBJECTS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SDL_GameControllerDB.txt">
+      <Filter>UTILITIES</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SDL2\lib\x86\libopus-0.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libopusfile-0.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libtiff-5.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libwebp-7.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libwebpdemux-2.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_image.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_mixer.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_net.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_ttf.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libavif-16.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libmodplug-1.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\libogg-0.dll">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_image.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_mixer.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_net.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_ttf.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libavif-16.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libmodplug-1.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libogg-0.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libopus-0.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libopusfile-0.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libtiff-5.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libwebp-7.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\libwebpdemux-2.dll">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_ttf.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2main.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2test.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_image.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_mixer.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x86\SDL2_net.lib">
+      <Filter>SDL\LIB\X86</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_net.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_ttf.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2main.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2test.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_image.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="SDL2\lib\x64\SDL2_mixer.lib">
+      <Filter>SDL\LIB\X64</Filter>
+    </None>
+    <None Include="config\config.json">
+      <Filter>CONFIG</Filter>
+    </None>
+    <None Include="glew\lib\x86\glew32.dll">
+      <Filter>GLEW\LIB\X86</Filter>
+    </None>
+    <None Include="glew\lib\x64\glew32.dll">
+      <Filter>GLEW\LIB\X64</Filter>
+    </None>
+    <None Include="glew\lib\x86\glew32.lib">
+      <Filter>GLEW\LIB\X86</Filter>
+    </None>
+    <None Include="glew\lib\x86\glew32s.lib">
+      <Filter>GLEW\LIB\X86</Filter>
+    </None>
+    <None Include="glew\lib\x64\glew32.lib">
+      <Filter>GLEW\LIB\X64</Filter>
+    </None>
+    <None Include="glew\lib\x64\glew32s.lib">
+      <Filter>GLEW\LIB\X64</Filter>
+    </None>
+  </ItemGroup>
+</Project>

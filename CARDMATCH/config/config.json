@@ -1,0 +1,17 @@
+{
+  "game": {
+    "settings": {
+      "title": "GAMEENGINE",
+      "renderer": "direct3d",
+      "fullscreen": false,
+      "gameloop": "fixed",
+      "resolution": {
+        "width": 1900,
+        "height": 1000
+      }
+    },
+    "scene": {
+      "id": "playscene"
+    }
+  }
+}
